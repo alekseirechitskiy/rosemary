@@ -1,11 +1,11 @@
 .container {
-  max-width: 1430px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
 
-  @media #{$tablet} {
-    padding: 0 50px;
-  }
+  // @media #{$tablet} {
+  //   padding: 0 50px;
+  // }
 }
 
 //     @media (max-width:1200px){
