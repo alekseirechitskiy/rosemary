@@ -1,0 +1,37 @@
+//  === Screen widths  ===
+$desktop: "(min-width: 1280px)";
+$tablet: "(min-width: 768px)";
+
+//  === Colors ===
+$white: #ffffff;
+$black: #000000;
+
+$blue-stone: #005A5A;
+$teal: #008B8B;
+
+$main: $teal;
+$accent: $blue-stone;
+
+
+// === Fonts ===
+$font-family-default: "Helvetica";
+
+// === Fonts sizes ===
+$font-size-normal: 16px;
+
+$font-size-large: 20px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+$font-size-extraSmall: 12px;
+
+// === Line heights ===
+$line-height-normal: 20px;
+
+$line-height-large: 24px;
+$line-height-medium: 22px;
+$line-height-small: 18px;
+$line-height-extraSmall: 16px;
+
+
+// === Fonts colors  ===
+$text-main-color: $black;
