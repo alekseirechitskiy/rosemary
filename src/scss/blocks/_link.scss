@@ -38,4 +38,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &--rounded {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 163px;
+    width: 163px;
+    color: $white;
+    background-color: $gold;
+  }
 }

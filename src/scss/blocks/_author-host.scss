@@ -1,0 +1,98 @@
+.author-host {
+  margin-top: 120px;
+  border-top: 1px solid rgba($dark-blue, 0.5);
+  border-bottom: 1px solid rgba($dark-blue, 0.5);
+  min-height: 352px;
+}
+
+.author-host__inner {
+  display: flex;
+}
+
+.author-host__author {
+  border-right: 1px solid rgba($dark-blue, 0.5);
+  padding-right: 57px;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.author-host__host {
+  border-left: 1px solid rgba($dark-blue, 0.5);
+  padding-left: 60px;
+  flex-grow: 1;
+  padding-right: 15px;
+}
+
+.author-host__link-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.author-host__author,
+.author-host__host,
+.author-host__link-box {
+  width: 600px;
+}
+
+.author-host__author,
+.author-host__host {
+  padding-top: 31px;
+  padding-bottom: 97px;
+}
+
+.author-host__author-title,
+.author-host__host-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 33px;
+  max-width: 333px;
+}
+
+.author-host__author-title,
+.author-host__author-text {
+  margin-left: auto;
+}
+
+.author-host__author-text, 
+.author-host__host-text {
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 30px;
+  max-width: 333px;
+}
+
+.author-host__link-image {
+  position: absolute;
+  animation: text-rotate 25s linear infinite;
+  z-index: -1;
+}
+
+.author-host__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 163px;
+  height: 163px;
+  color: $white;
+  background-color: $gold;
+  border-radius: 50%;
+  font-family: $font-family-secondary, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: $font-size-large;
+  line-height: 27px;
+}
+
+@keyframes text-rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
