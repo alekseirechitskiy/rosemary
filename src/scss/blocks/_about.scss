@@ -1,0 +1,57 @@
+.about {
+  // padding-top: 78px;
+  margin-top: -150px;
+}
+
+.about__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about__info {
+
+}
+
+.about__title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  color: $dark-blue;
+  margin-bottom: 46px;
+}
+
+.about__blockquote {
+  font-style: italic;
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 30px;
+  padding-left: 50px;
+  max-width: 500px;
+  margin-bottom: 75px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -15px;
+    background-image: url("@img/icons/blockquotes.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.about__link {
+
+}
+
+.about__image {
+
+}

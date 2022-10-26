@@ -1,0 +1,41 @@
+.link {
+  font-family: $font-family-secondary, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: $font-size-normal;
+  line-height: 22px;
+  color: $black;
+  padding-left: 36px;
+  padding-right: 27px;
+  position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 82px;
+    left: 0;
+    top: -28px;
+    background-image: url("@img/icons/ellipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 6px;
+    right: 0;
+    top: 8px;
+    background-image: url("@img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
