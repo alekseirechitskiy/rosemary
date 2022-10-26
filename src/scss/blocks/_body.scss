@@ -7,8 +7,10 @@
   height: 100%;
   width: 100%;
   font-family: $font-family-default;
+  font-weight: 300;
   font-size: $font-size-normal;
   line-height: 19px;
-  color: $text-main-color;
+  color: $black;
   background-color: $white;
+  background-image: url("@img/bg-noise.png");
 }
