@@ -1,0 +1,29 @@
+.tabs-nav {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.tabs-nav__item {
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tabs-nav__link {
+  font-family: $font-family-secondary, serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: rgba($black, 0.5);
+  transition: color 0.3s;
+  
+  &:hover {
+    color: $black;
+  }
+
+  &--active {
+    color: $black;
+  }
+}

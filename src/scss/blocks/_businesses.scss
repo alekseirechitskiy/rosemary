@@ -1,0 +1,87 @@
+.businesses {
+  padding: 120px 0;
+  border-bottom: 1px solid rgba($dark-blue, 0.5);
+  background-image: url("@img/businesses-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right 305px;
+}
+
+.businesses__title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  color: $dark-blue;
+  margin-left: 115px;
+  margin-bottom: 80px;
+}
+
+.businesses__content {
+  display: flex;
+}
+
+.businesses__image {
+
+}
+
+.businesses__info {
+  margin-top: 50px;
+}
+
+.businesses__tabs-box {
+  margin-left: 140px;
+}
+
+.businesses__tabs-nav {
+  margin-bottom: 40px;
+}
+
+.businesses__tabs-content {
+  max-width: 553px;
+  height: 300px;
+  margin-bottom: 76px;
+}
+
+.businesses__tabs-content-item {
+  display: none;
+
+  &.businesses__tabs-content-item--active {
+    display: block;
+  }
+}
+
+.businesses__tabs-text {
+  font-weight: 300;
+  font-size: $font-size-large;
+  line-height: 30px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.businesses__blockquote {
+  padding: 45px 88px 45px 228px;
+  background-color: rgba($gold, 0.1);
+  font-family: $font-family-secondary, serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 68px;
+  color: $black;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    top: 50px;
+    left: 140px;
+    background-image: url("@img/icons/blockquotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+}

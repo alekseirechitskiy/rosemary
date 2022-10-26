@@ -33,22 +33,22 @@ export default function () {
 
   // Плавный переход по якорям
 
-  // document.querySelectorAll('a[href^="#"').forEach(link => {
-  //   link.addEventListener('click', function (evt) {
-  //     evt.preventDefault();
+  document.querySelectorAll('a[href^="#"').forEach(link => {
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
 
-  //     let href = this.getAttribute('href').substring(1);
-  //     const scrollTarget = document.getElementById(href);
-  //     // const topOffset = header.offsetHeight; // если не нужен отступ сверху равный высоте header
-  //     const topOffset = 0; // если не нужен отступ сверху 
-  //     const elementPosition = scrollTarget.getBoundingClientRect().top;
-  //     const offsetPosition = elementPosition - topOffset;
+      let href = this.getAttribute('href').substring(1);
+      const scrollTarget = document.getElementById(href);
+      // const topOffset = header.offsetHeight; // если не нужен отступ сверху равный высоте header
+      const topOffset = 0; // если не нужен отступ сверху 
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
 
-  //     window.scrollBy({
-  //       top: offsetPosition,
-  //       behavior: 'smooth'
-  //     });
-  //   });
-  // });
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
 
 }

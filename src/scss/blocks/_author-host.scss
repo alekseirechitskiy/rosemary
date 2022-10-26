@@ -86,6 +86,11 @@
   font-weight: 500;
   font-size: $font-size-large;
   line-height: 27px;
+  transition: font-size 0.3s;
+
+  &:hover {
+    font-size: 21px;
+  }
 }
 
 @keyframes text-rotate{
