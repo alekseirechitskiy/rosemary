@@ -39,11 +39,12 @@
   max-width: 553px;
   height: 300px;
   margin-bottom: 76px;
+  overflow-y: scroll;
 }
 
 .businesses__tabs-content-item {
   display: none;
-
+  
   &.businesses__tabs-content-item--active {
     display: block;
   }
@@ -83,5 +84,4 @@
     background-position: center;
     background-size: cover;
   }
-
 }

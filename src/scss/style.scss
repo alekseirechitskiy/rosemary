@@ -3,6 +3,7 @@
 @import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
+@import "animations"; // Подключение анимаций
 
 /*
 * blocks
@@ -25,4 +26,5 @@
 @import "blocks/author-host";
 @import "blocks/businesses";
 @import "blocks/tabs-nav";
+@import "blocks/real-property";
 // @import "blocks/form";

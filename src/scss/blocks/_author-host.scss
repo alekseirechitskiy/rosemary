@@ -91,20 +91,11 @@
     background-image: url("@img/circle-text.svg");
     background-repeat: no-repeat;
     background-position: center;
-    animation: text-rotate 25s linear infinite;
+    animation: rotate 25s linear infinite;
     z-index: -1;
   }
 
   &:hover {
     font-size: 21px;
-  }
-}
-
-@keyframes text-rotate{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
   }
 }
