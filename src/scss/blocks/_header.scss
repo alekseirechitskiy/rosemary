@@ -25,6 +25,11 @@
 
 .header__contacts-link {
   font-size: $font-size-medium;
+  transition: opacity 0.3s;
+  
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .header__toggle {
@@ -72,7 +77,3 @@
   }
 }
 
-.header--out {
-  transform: translateY(-100%);
-  transition: all .3s;
-}

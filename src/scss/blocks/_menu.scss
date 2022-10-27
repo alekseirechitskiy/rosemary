@@ -45,6 +45,11 @@
 
 .menu__link {
   font-size: 30px;
+  transition: opacity 0.3s;
+  
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media #{$tablet} {
     font-size: $font-size-medium;
