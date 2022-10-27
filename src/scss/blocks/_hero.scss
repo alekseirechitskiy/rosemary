@@ -1,8 +1,12 @@
 .hero {
   padding-top: 80px;
-  background-image: url("@img/hero-bg.svg");
+  background-image: url("@img/hero-bg.png");
   background-repeat: no-repeat;
   background-position: 0 210px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("@img/hero-bg@2x.png");
+  }
 }
 
 .hero__inner {

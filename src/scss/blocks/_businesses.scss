@@ -1,9 +1,13 @@
 .businesses {
   padding: 120px 0;
   border-bottom: 1px solid rgba($dark-blue, 0.5);
-  background-image: url("@img/businesses-bg.svg");
+  background-image: url("@img/businesses-bg.png");
   background-repeat: no-repeat;
   background-position: right 305px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("@img/businesses-bg@2x.png");
+  }
 }
 
 .businesses__title {

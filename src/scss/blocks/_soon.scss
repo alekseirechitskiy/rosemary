@@ -3,6 +3,10 @@
   background-image: url("@img/soon-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("@img/soon-bg@2x.png");
+  }
 }
 
 .soon__container {
@@ -56,6 +60,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@img/sign@2x.png");
+    }
   }
 }
 
