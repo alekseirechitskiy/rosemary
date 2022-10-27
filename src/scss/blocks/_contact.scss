@@ -1,0 +1,62 @@
+.contact {
+  border-bottom: 1px solid rgba($dark-blue, 0.5);
+
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 425px;
+    height: 505px;
+    top: 0;
+    left: 17px;
+    background-image: url("@img/contact-bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@img/contact-bg-1@2x.png");
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 496px;
+    height: 590px;
+    bottom: 0;
+    right: -38px;
+    background-image: url("@img/contact-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@img/contact-bg-2@2x.png");
+    }
+  }
+}
+
+.contact__inner {
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 120px 150px 188px;
+  border-left: 1px solid rgba($dark-blue, 0.5);
+  border-right: 1px solid rgba($dark-blue, 0.5);
+}
+
+.contact__form-wrapper {
+  background-color: rgba($gold, 0.1);
+  padding: 80px 147px 109px;
+  position: relative;
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  color: $gold;
+  margin-bottom: 77px;
+  text-align: center;
+}
