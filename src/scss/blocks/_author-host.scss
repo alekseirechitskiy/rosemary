@@ -1,5 +1,4 @@
 .author-host {
-  margin-top: 120px;
   border-top: 1px solid rgba($dark-blue, 0.5);
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   min-height: 352px;
@@ -28,7 +27,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .author-host__author,
@@ -66,12 +64,6 @@
   max-width: 333px;
 }
 
-.author-host__link-image {
-  position: absolute;
-  animation: text-rotate 25s linear infinite;
-  z-index: -1;
-}
-
 .author-host__link {
   display: flex;
   align-items: center;
@@ -87,6 +79,21 @@
   font-size: $font-size-large;
   line-height: 27px;
   transition: font-size 0.3s;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 290px;
+    height: 290px;
+    top: -64px;
+    left: -64px;
+    background-image: url("@img/circle-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: text-rotate 25s linear infinite;
+    z-index: -1;
+  }
 
   &:hover {
     font-size: 21px;
