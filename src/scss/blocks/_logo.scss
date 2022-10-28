@@ -1,3 +1,10 @@
 .logo__image {
+  width: 59px;
+  height: 61px;
   vertical-align: middle;
+
+  @media #{$screen-992} {
+    width: 107px;
+    height: 117px;
+  }
 }

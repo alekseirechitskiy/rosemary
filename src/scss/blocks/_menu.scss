@@ -16,7 +16,7 @@
   transform: translateY(-200%);
   transition: all .3s;
 
-  @media #{$tablet} {
+  @media #{$screen-992} {
     position: static;
     flex-direction: row;
     transform: translateY(0);
@@ -33,7 +33,7 @@
 .menu__item {
   margin: 25px 0;
   
-  @media #{$tablet} {
+  @media #{$screen-992} {
     margin: 0;
     margin-right: 30px;
   }
@@ -51,7 +51,7 @@
     opacity: 0.5;
   }
 
-  @media #{$tablet} {
+  @media #{$screen-992} {
     font-size: $font-size-medium;
   }
 }
