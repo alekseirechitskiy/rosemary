@@ -1,19 +1,22 @@
 .hero {
   padding-top: 30px;
-  background-image: url("@img/hero-bg.png");
-  background-repeat: no-repeat;
-  background-position: 0 210px;
+ 
   
   @media #{$screen-768} {
     padding-top: 50px;
+    background-image: url("@img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 50px;
   }
 
   @media #{$screen-992} {
     padding-top: 60px;
+    background-position: 0 100px;
   }
 
   @media #{$screen-1280} {
     padding-top: 80px;
+    background-position: 0 210px;
   }
 
   @media (min-resolution: 2dppx) {
