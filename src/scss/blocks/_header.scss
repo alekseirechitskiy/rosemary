@@ -1,7 +1,7 @@
 .header {
   z-index: 99999;
-  margin-top: 45px;
-  border-top: 1px solid rgba($dark-blue, 0.5);
+  // margin-top: 45px;
+  // border-top: 1px solid rgba($dark-blue, 0.5);
   left: 0;
   right: 0;
   background-color: $white;
@@ -9,10 +9,10 @@
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   transition: all .3s;
 
-  @media #{$screen-768} {
-    margin-top: 0;
-    border-top: none;
-  }
+  // @media #{$screen-768} {
+  //   margin-top: 0;
+  //   border-top: none;
+  // }
 }
 
 .header__inner {
@@ -60,6 +60,7 @@
   z-index: 999;
   display: block;
   padding: 0;
+  margin-left: 21px;
   width: 30px;
   height: 30px;
   cursor: pointer;

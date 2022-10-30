@@ -1,10 +1,22 @@
 .tabs-nav {
   display: flex; 
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+  @media #{$screen-390} {
+    width: auto;
+    justify-content: flex-start;
+  }
+
 }
 
 .tabs-nav__item {
-  margin-right: 28px;
+  margin-right: 12px;
+
+  @media #{$screen-390} {
+    margin-right: 28px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -14,10 +26,30 @@
 .tabs-nav__link {
   font-family: $font-family-secondary, serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 41px;
+  font-size: $font-size-normal;
+  line-height: 22px;
   color: rgba($black, 0.5);
   transition: color 0.3s;
+
+  @media #{$screen-500} {
+    font-size: $font-size-medium;
+
+  }
+
+  @media #{$screen-768} {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media #{$screen-992} {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  @media #{$screen-1280} {
+    font-size: 30px;
+    line-height: 41px;
+  }
   
   &:hover {
     color: $black;

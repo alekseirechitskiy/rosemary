@@ -13,11 +13,6 @@
 .author-host__inner {
   display: flex;
   position: relative;
-
-  @media #{$screen-992} {
-
-  }
-
 }
 
 .author-host__author {
@@ -25,7 +20,11 @@
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   padding-right: 8px;
   flex-grow: 1;
-  padding-left: 30px;
+  padding-left: 15px;
+
+  @media #{$screen-390} {
+    padding-left: 30px;
+  }
 
   @media #{$screen-500} {
     padding-right: 57px;
@@ -38,11 +37,14 @@
 }
 
 .author-host__host {
-  // border-left: 1px solid rgba($dark-blue, 0.5);
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   padding-left: 8px;
   flex-grow: 1;
-  padding-right: 30px;
+  padding-right: 15px;
+
+  @media #{$screen-390} {
+    padding-right: 30px;
+  }
 
   @media #{$screen-500} {
     padding-left: 30px;
@@ -89,6 +91,7 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 35px;
+  color: $dark-blue;
   margin-bottom: 22px;
   max-width: 333px;
 
@@ -96,6 +99,10 @@
     font-size: 30px;
     line-height: 41px;
     margin-bottom: 33px;
+  }
+
+  @media #{$screen-992} {
+    color: $black;
   }
 }
 

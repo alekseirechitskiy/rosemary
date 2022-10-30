@@ -47,12 +47,17 @@
           <a class="author-host__link" href="#">Learn more</a>
         </div>
     </section>
-  <!--   <section class="businesses" id="businesses">
+    <section class="businesses" id="businesses">
       <div class="container">
         <div class="businesses__inner">
           <h2 class="businesses__title title">How can I be helpful</h2>
           <div class="businesses__content">
-            <img class="businesses__image" src="@img/businesses.jpg" srcset="@img/businesses@2x.jpg 2x" alt="portrait of Melany">
+            <div class="businesses__image-box">
+              <picture>
+                <source media="(min-width: 390px)" srcset="@img/businesses.jpg 1x, @img/businesses@2x.jpg 2x">
+                <img class="businesses__image" src="@img/businesses-mob.jpg" srcset="@img/businesses-mob@2x.jpg 2x" alt="portrait of Melany">
+              </picture>
+            </div>
             <div class="businesses__info">
               <div class="businesses__tabs-box">
                 <ul class="businesses__tabs-nav tabs-nav">
@@ -71,25 +76,38 @@
                 </ul>
                 <div class="businesses__tabs-content">
                   <div class="businesses__tabs-content-item businesses__tabs-content-item--active" id="tab-1">
-                    <p class="businesses__tabs-text">Melany Forwood is a multi-award winning wealth management professional focused on advising successful families and healthcare business owners to achieve their financial goals.</p>
-                    <p class="businesses__tabs-text">Since establishing Melany Forwood Wealth, Melany has distinguished herself on a national level with two consecutive Wealth Professional Awards: the Advisor Rising Star Award in 2017 and the Young Gun of the Year in 2016.</p>
+                    <div class="businesses__tabs-text-box">
+                      <p class="businesses__tabs-text">Melany Forwood is a multi-award winning wealth management professional focused on advising successful families and healthcare business owners to achieve their financial goals.</p>
+                      <p class="businesses__tabs-text">Since establishing Melany Forwood Wealth, Melany has distinguished herself on a national level with two consecutive Wealth Professional Awards: the Advisor Rising Star Award in 2017 and the Young Gun of the Year in 2016.</p>
+                      <p class="businesses__tabs-text">Since establishing Melany Forwood Wealth, Melany has distinguished herself on a national level with two consecutive Wealth Professional Awards: the Advisor Rising Star Award in 2017 and the Young Gun of the Year in 2016.</p>
+                    </div>
+                    <a class="businesses__tabs-link link" href="#">Learn more</a>
                   </div>
                   <div class="businesses__tabs-content-item" id="tab-2">
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima nostrum rerum nulla animi cupiditate vitae ipsum nesciunt repudiandae mollitia commodi corporis unde, enim maiores quibusdam libero voluptate iste ipsa cum, neque aliquid velit sequi? Molestias quaerat ducimus labore cupiditate?
-                    </p>
+                    <div class="businesses__tabs-text-box">
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima nostrum rerum nulla animi cupiditate vitae ipsum nesciunt repudiandae mollitia commodi corporis unde, enim maiores quibusdam libero voluptate iste ipsa cum, neque aliquid velit sequi? Molestias quaerat ducimus labore cupiditate?
+                      </p>
+                    </div>
+                    <a class="businesses__tabs-link link" href="#">Learn more</a>
                   </div>
                   <div class="businesses__tabs-content-item" id="tab-3">
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
+                    <div class="businesses__tabs-text-box">
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit placeat, ipsa maxime nisi commodi.</p>
+                    </div>
+                    <a class="businesses__tabs-link link" href="#">Learn more</a>
                   </div>
                   <div class="businesses__tabs-content-item" id="tab-4">
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, corporis consequatur recusandae necessitatibus voluptates iste. Unde quia consequatur reiciendis sit amet, fugit optio laborum aspernatur necessitatibus ratione porro ad ex?
-                    </p>
-                    <p class="businesses__tabs-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestiae?
-                    </p>
-                    <p class="businesses__tabs-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, corporis consequatur recusandae necessitatibus voluptates iste. Unde quia consequatur reiciendis sit amet, fugit optio laborum aspernatur necessitatibus ratione porro ad ex?
-                    </p>
+                    <div class="businesses__tabs-text-box">
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, corporis consequatur recusandae necessitatibus voluptates iste. Unde quia consequatur reiciendis sit amet, fugit optio laborum aspernatur necessitatibus ratione porro ad ex?
+                      </p>
+                      <p class="businesses__tabs-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestiae?
+                      </p>
+                      <p class="businesses__tabs-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, corporis consequatur recusandae necessitatibus voluptates iste. Unde quia consequatur reiciendis sit amet, fugit optio laborum aspernatur necessitatibus ratione porro ad ex?
+                      </p>
+                    </div>  
+                    <a class="businesses__tabs-link link" href="#">Learn more</a>
                   </div>
                 </div>
               </div>
@@ -99,7 +117,7 @@
         </div>
       </div>
     </section>
-    <section class="real-property">
+    <!--  <section class="real-property">
       <div class="real-property__container">
         <div class="real-property__inner">
           <div class="real-property__col">

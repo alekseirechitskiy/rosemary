@@ -1,26 +1,92 @@
 .businesses {
-  padding: 120px 0;
+  padding: 30px 0;
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   background-image: url("@img/businesses-bg.png");
   background-repeat: no-repeat;
   background-position: right 305px;
+
+  @media #{$screen-768} {
+    padding: 60px 0;
+  }
+
+  @media #{$screen-992} {
+    padding: 90px 0;
+  }
+
+  @media #{$screen-1280} {
+    padding: 120px 0;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("@img/businesses-bg@2x.png");
   }
 }
 
+.businesses__inner {
+  position: relative;
+
+  @media #{$screen-992} {
+    position: static;
+  }
+}
+
 .businesses__title {
   font-weight: 400;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 26px;
+  line-height: 30px;
   color: $dark-blue;
-  margin-left: 115px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
+
+  @media #{$screen-768} {
+    font-size: 35px;
+    line-height: 55px;
+    margin-bottom: 100px;
+
+  }
+  
+  @media #{$screen-992} {
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+  }
+
+  @media #{$screen-1280} {
+    margin-left: 115px;
+  }
 }
 
 .businesses__content {
   display: flex;
+}
+
+.businesses__image-box {
+  display: none;
+
+  @media #{$screen-390} {
+    display: block;
+    width: 187px;
+    flex-shrink: 0;
+    margin-left: -30px;
+  }
+
+  @media #{$screen-500} {
+    width: 50%;
+  }
+  
+  @media #{$screen-768} {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  @media #{$screen-768} {
+    width: 50%;
+  }
+
+  @media #{$screen-992} {
+    width: auto;
+    max-width: 588px;
+  }
 }
 
 .businesses__image {
@@ -28,22 +94,62 @@
 }
 
 .businesses__info {
-  margin-top: 50px;
+  // max-width: 50%;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+
+  @media #{$screen-992} {
+    max-width: 832px;
+  }
+  @media #{$screen-1440} {
+    margin-top: 50px;
+  }
+
 }
 
 .businesses__tabs-box {
-  margin-left: 140px;
+  
+  @media #{$screen-390} {
+    margin-left: 20px;
+  }
+
+
+  @media #{$screen-992} {
+    margin-left: 40px;
+  }
+  
+  @media #{$screen-992} {
+    margin-left: 60px;
+  }
+  
+  @media #{$screen-1440} {
+    margin-left: 140px;
+  }
 }
 
 .businesses__tabs-nav {
   margin-bottom: 40px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+  @media #{$screen-768} {
+    top: 80px;
+  }
+
+  @media #{$screen-992} {
+    position: static;
+  }
 }
 
 .businesses__tabs-content {
   max-width: 553px;
-  height: 300px;
-  margin-bottom: 76px;
-  overflow-y: scroll;
+  margin-bottom: 40px;
+
+  @media #{$screen-1440} {
+    margin-bottom: 76px;
+  }
 }
 
 .businesses__tabs-content-item {
@@ -54,38 +160,101 @@
   }
 }
 
+.businesses__tabs-text-box {
+  height: 180px;
+  overflow-y: scroll;
+  margin-bottom: 60px;
+
+  @media #{$screen-500} {
+    height: 285px;
+  }
+  
+  @media #{$screen-768} {
+    height: auto;
+    // height: 360px;
+  }
+
+  @media #{$screen-1280} {
+    height: 300px;
+    overflow-y: scroll;
+
+  }
+}
+
 .businesses__tabs-text {
   font-weight: 300;
-  font-size: $font-size-large;
-  line-height: 30px;
-  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+
+  @media #{$screen-500} {
+    font-size: $font-size-normal;
+    line-height: 24px;
+  }
+
+  @media #{$screen-768} {
+    font-size: $font-size-medium;
+    line-height: 26px;
+  }
+
+  @media #{$screen-992} {
+    font-size: $font-size-large;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.businesses__tabs-link {
+  display: inline-block;
+  
+  @media #{$screen-768} {
+    display: none;
+  }
+
+}
+
 .businesses__blockquote {
-  padding: 45px 88px 45px 228px;
-  background-color: rgba($gold, 0.1);
-  font-family: $font-family-secondary, serif;
-  font-style: italic;
-  font-weight: 200;
-  font-size: 50px;
-  line-height: 68px;
-  color: $black;
-  position: relative;
+  display: none;
+
+  @media #{$screen-1280} {
+    display: block;
+    padding: 30px 88px 30px 200px;
+    background-color: rgba(213, 164, 89, 0.1);
+    font-family: "NotoSerifDisplay", serif, serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+    position: relative;
+  } 
+
+  @media #{$screen-1440} {
+    padding: 45px 88px 45px 228px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    width: 55px;
-    height: 55px;
-    top: 50px;
+    width: 35px;
+    height: 30px;
+    top: 30px;
     left: 140px;
     background-image: url("@img/icons/blockquotes.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media #{$screen-1440} {
+      width: 55px;
+      height: 55px;
+      top: 50px;
+    }
   }
 }
