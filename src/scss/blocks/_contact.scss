@@ -1,9 +1,7 @@
 .contact {
   position: relative;
+  border-bottom: 1px solid rgba($dark-blue, 0.5);
 
-  @media #{$screen-768} {
-    border-bottom: 1px solid rgba($dark-blue, 0.5);
-  }
 
   &:before {
     @media #{$screen-992} {
