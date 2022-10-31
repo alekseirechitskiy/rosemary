@@ -1,8 +1,19 @@
 .soon {
+  padding: 30px 0;
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   background-image: url("@img/soon-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
+
+  @media #{$screen-768} {
+    padding: 60px 0 90px;
+    
+  }
+
+  @media #{$screen-1024} {
+    padding: 0;
+  }
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("@img/soon-bg@2x.png");
@@ -13,43 +24,116 @@
   max-width: 1412px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media #{$screen-390} {
+    max-width: 1442px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
 }
 
 .soon__inner {
-  height: 413px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media #{$screen-1024} {
+    flex-direction: row;
+    height: 413px;
+  }
+
 }
 
 .soon__text {
-  max-width: 446px;
+  width: 100%;
   font-family: $font-family-secondary, serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 41px;
+  font-size: $font-size-normal;
+  line-height: 24px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+
+  @media #{$screen-500} {
+    width: 400px;
+    font-size: $font-size-large;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media #{$screen-768} {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media #{$screen-1024} {
+    margin-bottom: 0;
+    align-self: center;
+    margin-top: -85px;
+  }
+
+  @media #{$screen-1280} {
+    width: auto;
+    max-width: 446px;
+    font-size: 30px;
+    line-height: 41px;
+  }
 }
 
 .soon__blockquote {
-  padding-left: 45px;
-  padding-right: 83px;
-  max-width: 653px;
+  padding-left: 25px;
+  padding-right: 0;
+  max-width: 580px;
   position: relative;
+  align-self: flex-end;
+
+  @media #{$screen-768} {
+    padding-left: 45px;
+    padding-right: 83px;
+  }
+
+
+  @media #{$screen-1024} {
+    margin-bottom: 0;
+    align-self: center;
+    margin-top: -38px;
+  }
+
+  @media #{$screen-1280} {
+    width: auto;
+    max-width: 653px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    width: 30px;
-    height: 30px;
-    top: -30px;
+    width: 15px;
+    height: 15px;
+    top: 0px;
     left: 0;
     background-image: url("@img/icons/blockquotes.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media #{$screen-768} {
+      top: -5px;
+
+      width: 30px;
+      height: 30px;
+    }
+
+    @media #{$screen-1024} {
+      top: -30px;
+    }
+
   }
 
   &::after {
+    display: none;
     position: absolute;
     content: "";
     width: 83px;
@@ -61,6 +145,11 @@
     background-position: center;
     background-size: cover;
 
+    @media #{$screen-768} {
+      display: block;
+    }
+
+
     @media (min-resolution: 2dppx) {
       background-image: url("@img/sign@2x.png");
     }
@@ -71,16 +160,47 @@
   font-family: $font-family-secondary, serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 41px;
-  margin-bottom: 26px;
+  font-size: $font-size-normal;
+  line-height: 24px;
+  margin-bottom: 10px;
+
+  @media #{$screen-500} {
+    font-size: $font-size-large;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+
+  @media #{$screen-768} {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media #{$screen-1280} {
+    font-size: 30px;
+    line-height: 41px;
+  }
 }
 
 .soon__blockquote-sign {
   font-family: $font-family-secondary, serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: $font-size-small;
+  line-height: 20px;
   text-align: right;
-  margin-right: 54px;
+
+  @media #{$screen-500} {
+    font-size: $font-size-normal;
+    line-height: 24px;
+  }
+
+  @media #{$screen-768} {
+    margin-right: 54px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media #{$screen-1280} {
+    font-size: $font-size-large;
+    line-height: 27px;
+  }
 }

@@ -2,17 +2,27 @@
   padding: 30px 0 60px;
   border-bottom: 1px solid rgba($dark-blue, 0.5);
 
+  @media #{$screen-768} {
+    padding: 60px 0 90px;
+  }
+
   @media #{$screen-992} {
     padding: 115px 0 215px;
   }
-
-  
 }
 
 .real-property__container {
   max-width: 1748px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media #{$screen-390} {
+    max-width: 1778px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+
 }
 
 .real-property__inner {
@@ -51,7 +61,7 @@
       // height: 242px;
       right: 0;
       bottom: -49px;
-      left: 441px;
+      left: 421px;
       // background-image: url("@img/soon-circle.svg");
     }
 
@@ -72,8 +82,13 @@
 .real-property__col {
   margin: 0 -15px;
 
+  @media #{$screen-390} {
+    margin: 0 -30px;
+  }
+
+
   @media #{$screen-768} {
-    flex-basis: 365px;
+    flex-basis: 345px;
     margin: 0;
   }
 
@@ -179,11 +194,16 @@
   padding-left: 25px;
   // position: relative;
   position: absolute;
-  top: 100px;
-  right: 30px;
+  top: 83px;
+  right: 0;
   z-index: 10;
   max-width: 260px;
 
+  @media #{$screen-390} {
+    top: 100px;
+    right: 30px;
+
+  }
   @media #{$screen-500} {
     font-size: $font-size-normal;
     line-height: 24px;
@@ -193,11 +213,20 @@
 
   @media #{$screen-768} {
     position: relative;
-    line-height: 30px;
+    font-size: $font-size-medium;
+    line-height: 26px;
+    padding-right: 10px;
     padding-left: 45px;
     top: 0;
     right: 0;
   }
+
+  @media #{$screen-992} {
+    font-size: $font-size-large;
+    line-height: 30px;
+    
+  }
+
 
 
   &::before {
@@ -217,10 +246,5 @@
       width: 30px;
       height: 30px;
     }
-    // @media #{$screen-768} {
-    //   top: -8px;
-    //   width: 30px;
-    //   height: 30px;
-    // }
   }
 }
