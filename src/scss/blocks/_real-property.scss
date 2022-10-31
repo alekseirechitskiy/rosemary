@@ -1,6 +1,12 @@
 .real-property {
-  padding: 115px 0 215px;
+  padding: 30px 0 60px;
   border-bottom: 1px solid rgba($dark-blue, 0.5);
+
+  @media #{$screen-992} {
+    padding: 115px 0 215px;
+  }
+
+  
 }
 
 .real-property__container {
@@ -11,26 +17,82 @@
 
 .real-property__inner {
   display: flex;
-  gap: 104px;
+  flex-wrap: wrap;
   position: relative;
+
+  @media #{$screen-992} {
+    gap: 30px;
+
+  }
+  @media #{$screen-1530} {
+    gap: 50px;
+  }
+  
+  @media #{$screen-1600} {
+    gap: 104px;
+  
+  }
 
   &::after {
     position: absolute;
     content: "";
-    width: 242px;
-    height: 242px;
-    bottom: -121px;
-    left: 50%;
+    width: 93px;
+    height: 93px;
+    bottom: -46px;
+    right: 21px;
     margin-left: -121px;
-    background-image: url("@img/soon-circle.svg");
+    background-image: url("@img/soon-circle-mob.svg");
     background-repeat: no-repeat;
     background-position: center;
     animation: rotate-back 25s linear infinite;
+
+    @media #{$screen-768} {
+      // width: 242px;
+      // height: 242px;
+      right: 0;
+      bottom: -49px;
+      left: 441px;
+      // background-image: url("@img/soon-circle.svg");
+    }
+
+    @media #{$screen-992} {
+      width: 242px;
+      height: 242px;
+      bottom: -121px;
+      left: 378px;
+      background-image: url("@img/soon-circle.svg");
+    }
+    @media #{$screen-1280} {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .real-property__col {
-  flex-basis: 381px;
+  margin: 0 -15px;
+
+  @media #{$screen-768} {
+    flex-basis: 365px;
+    margin: 0;
+  }
+
+  @media #{$screen-992} {
+    flex-basis: 381px;
+    // margin: 0;
+  }
+
+
+  &:first-child {
+    display: none;
+
+    // @media #{$screen-1750} {
+    //   display: block;
+    // }
+    @media #{$screen-1280} {
+      display: block;
+    }
+  }
 
   &:last-child {
     flex-grow: 1;
@@ -38,52 +100,127 @@
 }
 
 .real-property__image {
-  filter: grayscale(100%);
   transition: filter 0.3s;
+  width: 100%;
+
+  @media #{$screen-1280} {
+    filter: grayscale(100%);
+  }
 
   &:hover {
     filter: grayscale(0);
   }
 
   &--first {
-    margin-bottom: 109px;
+    @media #{$screen-1280} {
+      //  margin-bottom: 109px;
+      margin-bottom: 30px;
+    }
+
+    @media #{$screen-1530} {
+      margin-bottom: 50px;
+    }
+    @media #{$screen-1600} {
+      margin-bottom: 104px;
+    }
   }
 
   &--portrait {
+    display: none;
     filter: none;
+
+    @media #{$screen-992} {
+      display: block;
+    }
   }
 }
 
 .real-property__info {
-  margin-bottom: 62px;
+  // margin-bottom: 0px;
+
+  
+  @media #{$screen-768} {
+    // position: static;
+    margin-bottom: 62px;
+  }
 }
 
 .real-property__title {
   font-weight: 400;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 26px;
+  line-height: 35px;
   color: $gold;
-  margin-bottom: 48px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+
+  @media #{$screen-390} {
+    margin-left: 30px;
+
+  }
+  @media #{$screen-768} {
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  @media #{$screen-992} {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 48px;
+  }
 }
 
 .real-property__blockquote {
   font-style: italic;
   font-weight: 300;
-  font-size: $font-size-large;
-  line-height: 30px;
-  padding-left: 45px;
-  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 25px;
+  // position: relative;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  z-index: 10;
+  max-width: 260px;
+
+  @media #{$screen-500} {
+    font-size: $font-size-normal;
+    line-height: 24px;
+    max-width: 350px;
+
+  }
+
+  @media #{$screen-768} {
+    position: relative;
+    line-height: 30px;
+    padding-left: 45px;
+    top: 0;
+    right: 0;
+  }
+
 
   &::before {
     position: absolute;
     content: "";
-    width: 30px;
-    height: 30px;
-    top: -8px;
+    width: 15px;
+    height: 15px;
+    top: 0;
     left: 0;
     background-image: url("@img/icons/blockquotes.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media #{$screen-768} {
+      top: -15px;
+      width: 30px;
+      height: 30px;
+    }
+    // @media #{$screen-768} {
+    //   top: -8px;
+    //   width: 30px;
+    //   height: 30px;
+    // }
   }
 }

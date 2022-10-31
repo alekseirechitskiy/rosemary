@@ -73,7 +73,7 @@
   @media #{$screen-500} {
     width: 50%;
   }
-  
+
   @media #{$screen-768} {
     width: 45%;
     margin-left: 0;
@@ -84,6 +84,10 @@
   }
 
   @media #{$screen-992} {
+    width: 40%;
+  }
+  
+  @media #{$screen-1280} {
     width: auto;
     max-width: 588px;
   }
@@ -171,7 +175,6 @@
   
   @media #{$screen-768} {
     height: auto;
-    // height: 360px;
   }
 
   @media #{$screen-1280} {
