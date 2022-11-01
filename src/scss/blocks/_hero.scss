@@ -1,7 +1,6 @@
 .hero {
   padding-top: 30px;
  
-  
   @media #{$screen-768} {
     padding-top: 50px;
     background-image: url("@img/hero-bg.png");

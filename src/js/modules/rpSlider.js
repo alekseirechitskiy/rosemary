@@ -3,7 +3,7 @@ import slick from "slick-carousel";
 
 export default function () {
   $('.rp-slider').slick({
-    // infinite: true,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,

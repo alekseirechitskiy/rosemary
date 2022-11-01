@@ -33,7 +33,6 @@
     @media #{$screen-1750}{
       bottom: 160px;
     }
-
   }
 
   .slick-next {
@@ -67,7 +66,6 @@
     width: 274px !important;
   }
 
-
   &:hover {
     @media #{$screen-768} {
       width: auto;
@@ -80,7 +78,6 @@
     @media #{$screen-1750} {
       width: 298px !important;
     }
-
 
     .contents-slider__slide-text {
       @media #{$screen-768} {
@@ -105,7 +102,6 @@
     line-height: 27px;
     margin-bottom: 30px;
   }
-
 }
 
 .contents-slider__slide-text {
@@ -122,7 +118,6 @@
     width: 100%;
     margin-bottom: 44px;
   }
-  
 }
 
 .contents-slider__slide-button {

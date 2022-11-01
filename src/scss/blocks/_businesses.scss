@@ -41,7 +41,6 @@
     font-size: 35px;
     line-height: 55px;
     margin-bottom: 100px;
-
   }
   
   @media #{$screen-992} {
@@ -93,31 +92,23 @@
   }
 }
 
-.businesses__image {
-
-}
-
 .businesses__info {
-  // max-width: 50%;
-
   flex-grow: 0;
   flex-shrink: 1;
 
   @media #{$screen-992} {
     max-width: 832px;
   }
+
   @media #{$screen-1440} {
     margin-top: 50px;
   }
-
 }
 
 .businesses__tabs-box {
-  
   @media #{$screen-390} {
     margin-left: 20px;
   }
-
 
   @media #{$screen-992} {
     margin-left: 40px;
@@ -180,7 +171,6 @@
   @media #{$screen-1280} {
     height: 300px;
     overflow-y: scroll;
-
   }
 }
 
@@ -217,7 +207,6 @@
   @media #{$screen-768} {
     display: none;
   }
-
 }
 
 .businesses__blockquote {

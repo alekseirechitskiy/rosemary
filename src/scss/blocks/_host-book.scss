@@ -1,10 +1,9 @@
 .host-book {
-  // border-bottom: 1px solid rgba($dark-blue, 0.5);
   display: flex;
+
   @media #{$screen-768} {
     border-bottom: 1px solid rgba($dark-blue, 0.5);
   }
-
 }
 
 .host-book__left, 
@@ -20,11 +19,6 @@
   @media #{$screen-992} {
     padding: 80px 0;
   }
-  @media #{$screen-1440} {
-    // height: 979px;
-
-  }
-
 }
 
 .host-book__info {
@@ -50,7 +44,6 @@
   @media #{$screen-1750} {
     position: relative;
   }
-
 }
 
 .host-book__title {
@@ -75,23 +68,19 @@
   @media #{$screen-1440} {
     margin-bottom: 75px;
   }
-
 }
 
 .host-book__contents {
   height: 100%;
   max-width: 100%;
   position: relative;
-  
+
   @media #{$screen-768} {
     margin-left: -38px;
-
   }
-
 
   @media #{$screen-1440} {
     max-width: 858px;
-
   }
 }
 
@@ -103,10 +92,8 @@
 
   @media #{$screen-390} {
     margin-right: -30px;
-
   }
 
-  
   .slick-list {
     overflow: hidden;
   }
@@ -117,7 +104,6 @@
   
   .slick-slide {
     opacity: 0.5;
-
   }
 
   .slick-current {
@@ -142,7 +128,7 @@
 .host-book__contents-slider {
   flex-grow: 1;
   margin-bottom: auto;
-  // min-height: 198px;
+
   @media #{$screen-768} {
     margin-top: -33px;
     height: 400px;
@@ -150,9 +136,7 @@
 
   @media #{$screen-1440} {
     height: 450px;
-
   }
-
 }
 
 .host-book__contents-title {
@@ -171,12 +155,8 @@
     font-size: 30px;
     line-height: 41px;
     margin-bottom: 42px;
-
   }
-
 }
-
-
 
 .host-book__link {
   margin-top: 60px;
@@ -189,6 +169,7 @@
   @media #{$screen-1440} {
     margin-top: 0;
   }
+
   @media #{$screen-1750} {
     position: absolute;
     bottom: 37px;
@@ -203,11 +184,11 @@
   padding-left: 75px;
   width: 28%;
   display: none;
-  
-  // @media #{$screen-1700} {}
+
   @media #{$screen-1440} {
     display: block;
   }
+
   @media #{$screen-1530} {
     width: 35%;
   }
@@ -223,6 +204,7 @@
   @media #{$screen-1700} {
     width: 47%;
   }
+
   @media #{$screen-1750} {
     width: 50%;
   }
@@ -234,7 +216,6 @@
 
 .host-book__right-text {
   position: absolute;
-  // bottom: 197px;
   bottom: 53px;
   left: -100px;
   transform: rotate(-90deg);

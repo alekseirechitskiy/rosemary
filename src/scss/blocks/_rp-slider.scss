@@ -10,6 +10,7 @@
     @media #{$screen-390} {
       margin: 0 -30px;
     }
+
     @media #{$screen-768} {
       margin: 0;
     }
@@ -47,6 +48,7 @@
     @media #{$screen-390} {
       right: -30px;
     }
+    
     @media #{$screen-768} {
       right: 10px;
     }

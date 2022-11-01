@@ -7,13 +7,11 @@
 
   @media #{$screen-768} {
     padding: 60px 0 90px;
-    
   }
 
   @media #{$screen-1024} {
     padding: 0;
   }
-
 
   @media (min-resolution: 2dppx) {
     background-image: url("@img/soon-bg@2x.png");
@@ -30,7 +28,6 @@
     margin: 0 auto;
     padding: 0 30px;
   }
-
 }
 
 .soon__inner {
@@ -44,7 +41,6 @@
     flex-direction: row;
     height: 413px;
   }
-
 }
 
 .soon__text {
@@ -95,7 +91,6 @@
     padding-right: 83px;
   }
 
-
   @media #{$screen-1024} {
     margin-bottom: 0;
     align-self: center;
@@ -121,7 +116,6 @@
 
     @media #{$screen-768} {
       top: -5px;
-
       width: 30px;
       height: 30px;
     }
@@ -129,7 +123,6 @@
     @media #{$screen-1024} {
       top: -30px;
     }
-
   }
 
   &::after {
@@ -148,7 +141,6 @@
     @media #{$screen-768} {
       display: block;
     }
-
 
     @media (min-resolution: 2dppx) {
       background-image: url("@img/sign@2x.png");

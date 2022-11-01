@@ -21,8 +21,6 @@
     margin: 0 auto;
     padding: 0 30px;
   }
-
-
 }
 
 .real-property__inner {
@@ -36,15 +34,14 @@
 
   @media #{$screen-1280} {
     flex-wrap: wrap;
-
   }
+
   @media #{$screen-1530} {
     gap: 50px;
   }
   
   @media #{$screen-1600} {
     gap: 104px;
-  
   }
 
   &::after {
@@ -62,12 +59,9 @@
     animation: rotate-back 25s linear infinite;
 
     @media #{$screen-768} {
-      // width: 242px;
-      // height: 242px;
       right: 0;
       bottom: -49px;
       left: 421px;
-      // background-image: url("@img/soon-circle.svg");
     }
 
     @media #{$screen-992} {
@@ -77,6 +71,7 @@
       left: 378px;
       background-image: url("@img/soon-circle.svg");
     }
+
     @media #{$screen-1280} {
       left: 50%;
       transform: translateX(-50%);
@@ -85,24 +80,14 @@
 }
 
 .real-property__col {
-  // margin: 0 -15px;
-
-  // @media #{$screen-390} {
-  //   margin: 0 -30px;
-  // }
-
-
   @media #{$screen-768} {
-    // flex-basis: 345px;
     width: 345px;
     margin: 0;
   }
 
   @media #{$screen-992} {
-    // flex-basis: 381px;
     width: 381px;
   }
-
 
   &:first-child {
     display: none;
@@ -116,10 +101,6 @@
     @media #{$screen-768} {
       flex-shrink: 0;
     }
-  }
-
-  &:last-child {
-
   }
 }
 
@@ -146,7 +127,6 @@
 
   &--first {
     @media #{$screen-1280} {
-      //  margin-bottom: 109px;
       margin-bottom: 30px;
     }
 
@@ -169,11 +149,8 @@
 }
 
 .real-property__info {
-  // margin-bottom: 0px;
-
-  
   @media #{$screen-768} {
-    // position: static;
+
     margin-bottom: 62px;
   }
 }
@@ -183,12 +160,7 @@
   font-size: 26px;
   line-height: 35px;
   color: $gold;
-  // margin-left: 15px;
   margin-bottom: 30px;
-
-  @media #{$screen-390} {
-    // margin-left: 30px;
-  }
 
   @media #{$screen-768} {
     margin-bottom: 20px;
@@ -219,13 +191,12 @@
   @media #{$screen-390} {
     top: 100px;
     right: 30px;
-
   }
+
   @media #{$screen-500} {
     font-size: $font-size-normal;
     line-height: 24px;
     max-width: 350px;
-
   }
 
   @media #{$screen-768} {
@@ -241,7 +212,6 @@
   @media #{$screen-992} {
     font-size: $font-size-large;
     line-height: 30px;
-    
   }
 
   &::before {
