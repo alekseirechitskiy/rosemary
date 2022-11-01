@@ -2,7 +2,8 @@
 <html class="html" lang="en">
 @@include('html/_head.html',{'title': 'Melany Forwood'})
 
-<body class="body">
+<body class="body" id="body">
+  <a class="body__button-up" href="#body">Up</a>
   <!-- HEADER -->
   @@include('html/_header.html',{})
 
@@ -31,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section class="author-host" id="authorHost">
+     <section class="author-host" id="authorHost">
         <div class="author-host__inner">
           <div class="author-host__author">
             <h3 class="author-host__author-title title">Author</h3>
@@ -117,7 +118,7 @@
         </div>
       </div>
     </section>
-      <section class="real-property">
+    <section class="real-property">
       <div class="real-property__container">
         <div class="real-property__inner">
           <div class="real-property__col">
@@ -131,8 +132,26 @@
             </div>
             <img class="real-property__image real-property__image--portrait" src="@img/real-property-4.jpg" srcset="@img/real-property-4@2x.jpg 2x" alt="portrait of Melany">
           </div>
-          <div class="real-property__col">
-            <img class="real-property__image" src="@img/real-property-2.jpg" srcset="@img/real-property-2@2x.jpg 2x" alt="property example #2">
+
+          <div class="real-property__col real-property__col--slidered">
+
+            <div class="real-property__slider">
+              <div class="rp-slider">
+
+                <div class="rp-slider__slide">
+                  <img class="rp-slider__slide-image" src="@img/real-property-1.jpg" srcset="@img/real-property-1@2x.jpg 2x" alt="property example #1">
+                </div>
+                <div class="rp-slider__slide">
+                   <img class="rp-slider__slide-image" src="@img/real-property-2.jpg" srcset="@img/real-property-2@2x.jpg 2x" alt="property example #2">
+                </div>
+                <div class="rp-slider__slide">
+                   <img class="rp-slider__slide-image" src="@img/real-property-3-1.jpg" srcset="@img/real-property-3-1@2x.jpg 2x" alt="property example #3">
+                </div>
+
+              </div>
+            </div>
+
+            <img class="real-property__image real-property__slider-box" src="@img/real-property-2.jpg" srcset="@img/real-property-2@2x.jpg 2x" alt="property example #2">
           </div>
         </div>
       </div>

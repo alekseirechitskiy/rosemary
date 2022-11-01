@@ -32,6 +32,10 @@
 
   @media #{$screen-992} {
     gap: 30px;
+  }
+
+  @media #{$screen-1280} {
+    flex-wrap: wrap;
 
   }
   @media #{$screen-1530} {
@@ -44,6 +48,7 @@
   }
 
   &::after {
+    z-index: 9999;
     position: absolute;
     content: "";
     width: 93px;
@@ -80,37 +85,50 @@
 }
 
 .real-property__col {
-  margin: 0 -15px;
+  // margin: 0 -15px;
 
-  @media #{$screen-390} {
-    margin: 0 -30px;
-  }
+  // @media #{$screen-390} {
+  //   margin: 0 -30px;
+  // }
 
 
   @media #{$screen-768} {
-    flex-basis: 345px;
+    // flex-basis: 345px;
+    width: 345px;
     margin: 0;
   }
 
   @media #{$screen-992} {
-    flex-basis: 381px;
-    // margin: 0;
+    // flex-basis: 381px;
+    width: 381px;
   }
 
 
   &:first-child {
     display: none;
 
-    // @media #{$screen-1750} {
-    //   display: block;
-    // }
     @media #{$screen-1280} {
       display: block;
     }
   }
 
+  &:nth-child(2){
+    @media #{$screen-768} {
+      flex-shrink: 0;
+    }
+  }
+
   &:last-child {
+
+  }
+}
+
+.real-property__col--slidered {
+  width: 100%;
+
+  @media #{$screen-768} {
     flex-grow: 1;
+    width: 0;
   }
 }
 
@@ -165,13 +183,13 @@
   font-size: 26px;
   line-height: 35px;
   color: $gold;
-  margin-left: 15px;
+  // margin-left: 15px;
   margin-bottom: 30px;
 
   @media #{$screen-390} {
-    margin-left: 30px;
-
+    // margin-left: 30px;
   }
+
   @media #{$screen-768} {
     margin-bottom: 20px;
     margin-left: 0;
@@ -192,11 +210,10 @@
   font-size: 13px;
   line-height: 20px;
   padding-left: 25px;
-  // position: relative;
   position: absolute;
   top: 83px;
   right: 0;
-  z-index: 10;
+  z-index: 9999;
   max-width: 260px;
 
   @media #{$screen-390} {
@@ -227,8 +244,6 @@
     
   }
 
-
-
   &::before {
     position: absolute;
     content: "";
@@ -246,5 +261,22 @@
       width: 30px;
       height: 30px;
     }
+  }
+}
+
+.real-property__slider {
+  display: block;
+  min-width: 0;
+
+  @media #{$screen-1280} {
+    display: none;
+  }
+}
+
+.real-property__slider-box {
+  display: none;
+
+  @media #{$screen-1280} {
+    display: block;
   }
 }

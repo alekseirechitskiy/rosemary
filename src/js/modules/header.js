@@ -3,6 +3,7 @@ export default function () {
   const body = document.querySelector('.body');
   const menuButton = document.querySelector('.header__toggle');
   const menuList = document.querySelector('.menu__list');
+  const menuLink = document.querySelectorAll('.menu__link');
 
   // Открытие меню
   const toggleMenu = () => {
@@ -17,6 +18,17 @@ export default function () {
     }
   );
 
+  //Закрытие меню по клику на путкт меню
+  const closeMenu = () => {
+    menuButton.classList.remove('header__toggle--close');
+    menuList.classList.remove('menu__list--active');
+    body.classList.remove('overflow-hidden');
+  }
+
+  menuLink.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  })
+
   // Исчезновение header при скролле
   const header = document.querySelector('.header');
   let scrollPrev = 0;
@@ -30,6 +42,9 @@ export default function () {
     }
     scrollPrev = scrolled;
   };
+
+  // Исчезновение button при скролле
+
 
   // Плавный переход по якорям
 

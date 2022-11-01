@@ -1,4 +1,8 @@
 .main {
-  // padding-top: 197px;
+  margin-top: 77px;
   flex-grow: 1;
+
+  @media #{$screen-992} {
+    margin-top: 0;
+  }
 }

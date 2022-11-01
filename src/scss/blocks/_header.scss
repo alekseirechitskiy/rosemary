@@ -1,7 +1,7 @@
 .header {
   z-index: 99999;
-  // margin-top: 45px;
-  // border-top: 1px solid rgba($dark-blue, 0.5);
+  position: fixed;
+  flex-shrink: 0;
   left: 0;
   right: 0;
   background-color: $white;
@@ -9,10 +9,9 @@
   border-bottom: 1px solid rgba($dark-blue, 0.5);
   transition: all .3s;
 
-  // @media #{$screen-768} {
-  //   margin-top: 0;
-  //   border-top: none;
-  // }
+  @media #{$screen-992} {
+    position: static;
+  }
 }
 
 .header__inner {
@@ -44,6 +43,10 @@
   margin-bottom: 5px;
 
   @media #{$screen-768} {
+    font-size: $font-size-normal;
+  }
+
+  @media #{$screen-992} {
     font-size: $font-size-medium;
   }
 
@@ -101,5 +104,10 @@
       transform: translateY(-5px) rotate(-45deg);
     }
   }
+}
+
+.header--out {
+  transform: translateY(-100%);
+  transition: all .3s;
 }
 
