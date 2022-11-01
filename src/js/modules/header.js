@@ -43,9 +43,6 @@ export default function () {
     scrollPrev = scrolled;
   };
 
-  // Исчезновение button при скролле
-
-
   // Плавный переход по якорям
 
   document.querySelectorAll('a[href^="#"').forEach(link => {
