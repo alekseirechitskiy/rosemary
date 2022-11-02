@@ -29,7 +29,7 @@
   position: relative;
 
   @media #{$screen-992} {
-    gap: 30px;
+    // gap: 30px;
   }
 
   @media #{$screen-1280} {
@@ -37,11 +37,11 @@
   }
 
   @media #{$screen-1530} {
-    gap: 50px;
+    // gap: 50px;
   }
   
   @media #{$screen-1600} {
-    gap: 104px;
+    // gap: 104px;
   }
 
   &::after {
@@ -95,11 +95,35 @@
     @media #{$screen-1280} {
       display: block;
     }
+
+    @media #{$screen-992} {
+      margin-right: 30px;
+    }
+
+    @media #{$screen-1530} {
+      margin-right: 50px;
+    }
+  
+    @media #{$screen-1600} {
+      margin-right: 104px;
+    }
   }
 
   &:nth-child(2){
     @media #{$screen-768} {
       flex-shrink: 0;
+    }
+
+    @media #{$screen-992} {
+      margin-right: 30px;
+    }
+
+    @media #{$screen-1530} {
+      margin-right: 50px;
+    }
+  
+    @media #{$screen-1600} {
+      margin-right: 104px;
     }
   }
 }
@@ -140,17 +164,19 @@
 
   &--portrait {
     display: none;
-    filter: none;
 
     @media #{$screen-992} {
       display: block;
+    }
+
+    @media #{$screen-1280} {
+      filter: grayscale(0);
     }
   }
 }
 
 .real-property__info {
   @media #{$screen-768} {
-
     margin-bottom: 62px;
   }
 }
